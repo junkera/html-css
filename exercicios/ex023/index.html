@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
+      }
+      body {
+        background-color: #87CEFA;
+      }
+      /* Navigation Bar */
+      .navbar {
+        background-color: #228B22;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .navbar a {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+      /* Hero Section */
+      .hero {
+        background-image: url('hero-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero h1 {
+        color: #FFFFFF;
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .hero a {
+        background-color: #228B22;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      /* Featured Section */
+      .featured {
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .featured .card {
+        background-color: #FFFFFF;
+        width: 30%;
+        margin: 10px;
+        box-shadow: 5px 5px #228B22;
+        text-align: center;
+        padding: 20px;
+      }
+      .featured img {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .featured h2 {
+        color: #228B22;
+        margin-bottom: 10px;
+      }
+      .featured p {
+        color: #696969;
+        text-align: justify;
+        line-height: 1.5;
+      }
+      /* About Us Section */
+      .about {
+        background-color: #87CEFA;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .about h2 {
+        color: #228B22;
+        margin-bottom: 20px;
+      }
+      .about p {
+        color: #696969;
+        text-align: justify;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      /* Contact Us Section */
+      .contact {
+        padding: 50px 0;
+        text-align: center;
+      }
+      .contact h2 {
+        color: #228B22;
+        margin-bottom: 20px;
+      }
+      .contact form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .contact input[type="text"],
+      .contact input[type="email"],
+      .contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #F0F8FF;
+      }
+      .contact input[type="submit"] {
+        background-color: #228B22;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      /* Footer */
+      footer {
+        background-color: #228B22;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 20px;
+      }
+      </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Pets</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+      </nav>
+      <section class="hero">
+        <h1>Welcome to PetShop</h1>
+        <p>We offer a wide variety of pets for you to choose from. All of our pets are well-trained and friendly.</p>
+        <a href="#">Learn More</a>
+      </section>
+      <section class="featured">
+        <div class="card">
+          <img src="dog.jpg" alt="Dog">
+          <h2>Dogs</h2>
+          <p>We have a wide variety of breeds for you to choose from. All of our dogs are well-trained and friendly.</p>
+        </div>
+        <div class="card">
+          <img src="cat.jpg" alt="Cat">
+          <h2>Cats</h2>
+          <p>We have a wide variety of breeds for you to choose from. All of our cats are well-trained and friendly.</p>
+        </div>
+        <div class="card">
+          <img src="bird.jpg" alt="Bird">
+          <h2>Birds</h2>
+          <p>We have a wide variety of breeds for you to choose from. All of our birds are well-trained and friendly.</p>
+        </div>
+      </section>
+      <section class="about">
+        <h2>About Us</h2>
+        <p>PetShop is a pet store that offers a wide   variety of pets for our customers to choose from. We strive to provide the best care for our animals and ensure that they are well-trained and friendly before they are put up for adoption. Our staff is highly knowledgeable and passionate about animals, and we are always happy to help our customers find the perfect pet for their home. We also offer a wide range of pet supplies and accessories to help keep your new pet happy and healthy.</p>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+    <footer>
+      Copyright © PetShop 2022
+    </footer>
+</body>
+
+ 
