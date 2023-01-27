@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       input.teste{
+        border-width: 0px 0px 1px;
+        border-color: rgba(80, 80, 145, 0.075);
+        border-radius: 5px;
+        background-color: rgba(240, 248, 255, 0.315);
+        box-shadow: 2px 2px 1px rgba(240, 248, 255, 0.158);
+        
+        
+       }
+        
+    </style>
+    
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" class="teste" >
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="100" placeholder="0-100" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Periodo Letivo</label>
+            <input type="month" name="mes" id="imes" value="2022-07">
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="color" id="idia">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
